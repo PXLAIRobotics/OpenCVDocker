@@ -11,6 +11,7 @@ int main(int argc, char** argv)
     {
           Mat frame;
           cap >> frame;
+	  flip(frame, frame, 1);
           if( frame.empty() ) break; // end of video stream
           imshow("this is you, smile! :)", frame);
           if( waitKey(10) == 27 ) break; // stop capturing by pressing ESC 
