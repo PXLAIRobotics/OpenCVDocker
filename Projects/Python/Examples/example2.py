@@ -90,12 +90,12 @@ class Example2:
         self.bound_low1 = np.array([h_low1, s_low1, v_low1], np.uint8)
         self.bound_up1  = np.array([h_up1, s_up1, v_up1], np.uint8)
 
-        h_low2 = cv2.getTrackbarPos('Hue lower bound:', 'Mask2')
-        h_up2  = cv2.getTrackbarPos('Hue upper bound:', 'Mask2')
-        s_low2 = cv2.getTrackbarPos('Saturation lower bound:', 'Mask2')
-        s_up2  = cv2.getTrackbarPos('Saturation upper bound:', 'Mask2')
-        v_low2 = cv2.getTrackbarPos('Value lower bound:', 'Mask2')
-        v_up2  = cv2.getTrackbarPos('Value upper bound:', 'Mask2')
+        h_low2 = cv2.getTrackbarPos('Hue lower bound:', 'mask2')
+        h_up2  = cv2.getTrackbarPos('Hue upper bound:', 'mask2')
+        s_low2 = cv2.getTrackbarPos('Saturation lower bound:', 'mask2')
+        s_up2  = cv2.getTrackbarPos('Saturation upper bound:', 'mask2')
+        v_low2 = cv2.getTrackbarPos('Value lower bound:', 'mask2')
+        v_up2  = cv2.getTrackbarPos('Value upper bound:', 'mask2')
 
         self.bound_low2 = np.array([h_low2, s_low2, v_low2], np.uint8)
         self.bound_up2  = np.array([h_up2, s_up2, v_up2], np.uint8)
