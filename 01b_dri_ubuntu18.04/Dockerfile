@@ -27,7 +27,7 @@ RUN set -x \
 
 # Add some packages we need later on
 RUN set -x \
-        && apt-get install -y apt-transport-https ca-certificates git vim sudo htop tmux curl wget mesa-utils \
+        && apt-get install -y apt-transport-https ca-certificates git vim nano sudo htop tmux curl wget mesa-utils \
         && apt-get install -y software-properties-common libnss3 dirmngr gnupg2 lsb-release apt-utils \
         && apt-get install -y bash-completion
 

@@ -13,5 +13,5 @@ docker run --privileged -it --rm \
     --env="DISPLAY=$DISPLAY" \
     -e "TERM=xterm-256color" \
     --cap-add SYS_ADMIN --device /dev/fuse \
-    pxl_ra_base_ubuntu18.04:latest \
+    pxl_air_base_ubuntu18.04:latest \
     bash

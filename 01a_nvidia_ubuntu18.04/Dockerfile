@@ -11,7 +11,7 @@ RUN set -x \
         && apt-get install -y mesa-utils \ 
         && apt-get install -y apt-transport-https ca-certificates \
         && apt-get install -y openssh-server \
-        && apt-get install -y git vim htop sudo curl wget gnupg2 \
+        && apt-get install -y git vim nano htop sudo curl wget gnupg2 \
         && rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update && apt-get install -y --no-install-recommends \

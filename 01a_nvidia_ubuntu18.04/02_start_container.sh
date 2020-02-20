@@ -17,5 +17,5 @@ docker run -it \
     --volume="$XAUTH:$XAUTH" \
     --runtime=nvidia \
     --device=/dev/video0:/dev/video0 \
-    pxl_ra_base_ubuntu18.04:latest \
+    pxl_air_base_ubuntu18.04:latest \
     bash

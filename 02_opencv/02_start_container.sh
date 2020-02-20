@@ -20,7 +20,7 @@ if [ $vendor == "NVIDIA" ]; then
         --volume="$XAUTH:$XAUTH" \
         --runtime=nvidia \
         --device=/dev/video0:/dev/video0 \
-        pxl_ra_opencv:latest \
+        pxl_air_opencv:latest \
         bash
 else
     docker run --privileged -it --rm \
@@ -30,6 +30,6 @@ else
         --env="DISPLAY=$DISPLAY" \
         -e "TERM=xterm-256color" \
         --cap-add SYS_ADMIN --device /dev/fuse \
-        pxl_ra_opencv:latest \
+        pxl_air_opencv:latest \
         bash
 fi

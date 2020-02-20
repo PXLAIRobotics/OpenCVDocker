@@ -1,4 +1,4 @@
-FROM pxl_ra_base_ubuntu18.04:latest
+FROM pxl_air_base_ubuntu18.04:latest
 
 USER root
 
